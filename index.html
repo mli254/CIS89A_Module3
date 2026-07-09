@@ -7,6 +7,90 @@
     <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <!-- links - 
+     -a 
+     -href
+     -#
+     -id (replaces name)
+     -link title text
+     -top, 
+     mailto
+     subject
+     target
+     _blank
+     visited  
+     -->
+     <!-- links within the page, top, links to external web page (absolute), link to another page in 
+      same project (relative), opens in new window, opens in same window, link changes color after 
+      being visited, link changes color when mouse hovers over link, title displays when mouse hovers 
+      over link, mailto: special link with subject provided  -->
+    <header id="top" class="title">
+        <h1>The 'anchor' Element: A Foundation of Web Navigation</h1>
+        <div class="border-long"></div>
+        <nav>
+            <a href="#internal-jump" title="Jumps to the page section about internal links, and how they can jump between sections of a page.">
+                Internal Links: Jumping to a Section
+            </a>
+            &nbsp;
+            | 
+            &nbsp;
+            <a href="#internal-nav" title="Jumps to the page section about internal links, and how they can be used to navigate to a different page on a website.">
+                Internal Links: Navigating Between Pages
+            </a>
+            &nbsp;
+            | 
+            &nbsp;
+            <a href="#external" title="Jumps to the page section about external links, and how they can be opened in the same or a new tab.">
+                External Links: Same vs. New Tab
+            </a>
+            &nbsp;
+            | 
+            &nbsp;
+            <a href="#special" title="Jumps to the page section about a special type of link that opens up the user's email app.">
+                Special Links: "mailto:"
+            </a>
+        </nav>
+    </header>
+    <div class="border-long"></div>
+    <main>
+        <section class="text-block">
+            <h2>Description</h2>
+            <p>
+                This site shows the different ways in which the <strong>'anchor' element</strong> can be used.
+                This includes <strong>external links</strong>, which constitute links to websites of entirely different domains,
+                as well as <strong>internal links</strong>, which may direct the user to different sections of text on a page, or to a 
+                different page on the site. 
+            </p>
+            <p>
+                At its core, the <strong>anchor</strong> or <strong>&lt;a&gt;</strong> element is used to create a <strong>hyperlink</strong>. 
+                The destination is supplied via a mandatory <strong>'href' attribute</strong>, which tells the browser where to direct 
+                the user. This can take the form of a URL for external websites, an 'id' of another element for navigation within the 
+                same web page, or another .html file for navigation between the different pages of the site. It can even be used to open
+                a file in full screen given an 'iframe' element.  
+            </p>
+
+            <p>
+                Hyperlinks in HTML can be further customized with additional attributes. For instance, the <strong>target</strong> attribute 
+                can define how the link is opened, with <code>target="_blank"</code> making the browser display the destination of the link in 
+                a new tab.
+            </p>
+        </section>
+        <section class="text-block">
+            <h2 id="internal-jump">Internal Links: Jumping to a Sections</h2>
+        </section>
+        <section class="text-block">
+            <h2 id="internal-nav">Internal Links: Navigating Between Pages</h2>
+        </section>
+        <section class="text-block">
+            <h2 id="external">External Links: Same vs. New Tab</h2>
+        </section>
+        <section class="text-block">
+            <h2 id="special">Special Links: "mailto:</h2>
+        </section>
+    </main>
+    <div class="border-short"></div>
+    <footer>
+        <a href="#top" title="Jumps back to the top of the page.">Back to Top!</a>
+    </footer>
 </body>
 </html>
