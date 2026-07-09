@@ -2,10 +2,15 @@ html {
     background-color: beige;
 }
 
-code {
+pre {
     background-color: aliceblue;
     padding: 2px;
     color: maroon;
+}
+
+code {
+    margin-bottom: auto;
+    margin-top:auto;
 }
 
 footer {

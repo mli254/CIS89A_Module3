@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3. Links</title>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
     <!-- links - 
@@ -107,6 +107,27 @@
                 With external links, an absolute path---typically the full URL---is needed in the anchor tag's 
                 'href' attribute. 
             </p>
+            <p>
+                An example that opens in the <strong>same tab</strong> would be: 
+                <br />
+                <br />
+                &emsp;&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a">A link to the Mozilla documentation on the anchor tag.</a>
+            </p>
+            <p>
+                For that same example to open in a <strong>new tab</strong>, we need to add the 'target' attribute and set it to '_blank', as follows:
+                <br />
+                <br />
+                &emsp;&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener" rel="noreferrer">This is a link to the Mozilla documentation on the anchor tag (opens in a new tab)</a>
+                <br />
+                <br />
+                The syntax for this may look like:
+                
+            </p>
+            <pre>
+                <code>&lt;a href="[URL]" target="_blank" rel="noopener" rel="noreferrer"&gt;</code> 
+                &emsp;&emsp;&emsp;<code>[Link Text] </code>
+                <code>&lt;/a&gt;</code>
+            </pre>
         </section>
         <section class="text-block">
             <h2 id="special">Special Links: "mailto:</h2>
