@@ -1,3 +1,4 @@
+/* Provides global styling: wanted to try a dark mode color scheme this time. */
 html {
     background-color: #0e191c;
     color: white;
@@ -8,6 +9,7 @@ strong {
 }
 
 pre {
+    white-space: pre-wrap; /* code obtained from: https://stackoverflow.com/questions/248011/how-do-i-wrap-text-in-a-pre-tag*/
     padding: 2px;
     color: #8CD1B3;
 }
@@ -16,6 +18,7 @@ footer {
     text-align: center;
 }
 
+/* Divided things into sections so that this code would be more reusable, and make it easier to group items */
 section {
     background-color: #233C45;
     padding: 0.75em;
@@ -23,18 +26,28 @@ section {
     border-radius: 25px;
 }
 
+h2 {
+    margin-left: 0.5em;
+}
+
+p {
+    margin-left: 2em;
+}
+
+/* The following styles dictate the unvisited color, the hover color, and visited color for hyperlinks */
 a {
     color: #7BDEE8;
 }
 
 a:hover {
-    color: #88F2E4;
+    color: #aafff4;
 }
 
 a:visited {
     color:#959eff;
 }
 
+/* Used some classes for further reusability of styles */
 .title{
     text-align: center;
 }
@@ -44,6 +57,7 @@ a:visited {
     margin-left: 25%;
 }
 
+/* Used CSS to create some borders for decoration */
 .border-long {
     border: 2px solid #8CBDD1;
     width: 75%;

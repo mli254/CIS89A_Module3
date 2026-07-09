@@ -7,14 +7,19 @@
     <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
+    <!-- Using the id attribute to allow the <a> tag to navigate between different sections of the page -->
+    <!-- The "top" id in particular allows the user to jump back to the top after scrolling to the bottom of the page. -->
+    <!-- Simply putting id="#" would also achieve the same effect -->
     <header id="top" class="title">
         <h1>The 'anchor' Element: A Foundation of Web Navigation</h1>
         <div class="border-long"></div>
         <nav>
+            <!-- The navigation bar demonstrates jumping using an "id" attribute -->
+             <!-- The 'title' attribute allows additional information to be displayed about the link on mouse hover, which can also be helpful for accessibility -->
             <a href="#internal-jump" title="Jumps to the page section about internal links, and how they can jump between sections of a page.">
                 Internal Links: Jumping to a Section
             </a>
-            &nbsp;
+            &nbsp; <!-- stands for 'non-breaking space'; wanted to use them to make the navigation bar feel cleaner -->
             | 
             &nbsp;
             <a href="#internal-nav" title="Jumps to the page section about internal links, and how they can be used to navigate to a different page on a website.">
@@ -58,15 +63,17 @@
                 a new tab.
             </p>
         </section>
+        <!-- Another demonstration of using 'id' to jump between sections on the same page -->
         <section class="text-block">
             <h2 id="internal-jump">Internal Links: Jumping to a Section</h2>
             <p>
                 The anchor tag can jump between the different sections of a web page by placing an "id" attribute within
                 the 'href' atrribute of the anchor tag. The syntax is:
-                <pre>
-                    <code>&lt;a href="#idName"&gt; [Link Text] &lt;/a&gt; </code>
-                </pre>
-
+            </p>
+            <pre>
+                <code>&lt;a href="#idName"&gt; [Link Text] &lt;/a&gt; </code>
+            </pre>
+            <p>
                 with 'idName' being replaced with the actual name of the element's id.
             </p>
             <p>
@@ -74,6 +81,8 @@
                 right back down to this section via the first option, "Internal Links: Jumping to a Section". 
             </p>
         </section>
+        <!-- Describes how to use relative paths to navigate to another .html file that shares the same stylesheet -->
+        <!-- Because the file is in the same folder, the path is just the filename itself -->
         <section class="text-block">
             <h2 id="internal-nav">Internal Links: Navigating Between Pages</h2>
             <p>
@@ -84,6 +93,8 @@
                 To try it out for yourself, <a href="other.html" title="Navigates to the 'other' page of the site.">here is a link to the other page of this website!</a>
             </p>
         </section>
+        <!-- Demonstrates how to open a link in the same or a new tab, as well as some security tips. -->
+        <!-- In particular, target="_blank" is what causes a link to be opened in a new tab -->
         <section class="text-block">
             <h2 id="external">External Links: Same vs. New Tab</h2>
             <p>
@@ -100,7 +111,7 @@
                 For that same example to open in a <strong>new tab</strong>, we need to add the 'target' attribute and set it to '_blank', as follows:
                 <br />
                 <br />
-                &emsp;&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a" title="Opens the Mozilla documentation for the anchor element in a new tab." target="_blank" rel="noopener" rel="noreferrer">This is a link to the Mozilla documentation on the anchor tag (opens in a new tab)</a>
+                &emsp;&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a" title="Opens the Mozilla documentation for the anchor element in a new tab." target="_blank" rel="noopener noreferrer">This is a link to the Mozilla documentation on the anchor tag (opens in a new tab)</a>
                 <br />
                 <br />
                 The syntax for this may look like:
@@ -116,6 +127,7 @@
                 will automatically add them whenever 'target' is set to '_blank'.
             </p>
         </section>
+        <!-- Describes and shows an example of a link opening the user's default email application and pre-filling out the email and subject fields -->
         <section class="text-block">
             <h2 id="special">Special Links: "mailto:</h2>
             <p>
