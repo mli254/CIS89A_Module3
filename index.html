@@ -7,23 +7,6 @@
     <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
-    <!-- links - 
-     -a 
-     -href
-     -#
-     -id (replaces name)
-     -link title text
-     -top, 
-     mailto
-     subject
-     target
-     _blank
-     visited  
-     -->
-     <!-- links within the page, top, links to external web page (absolute), link to another page in 
-      same project (relative), opens in new window, opens in same window, link changes color after 
-      being visited, link changes color when mouse hovers over link, title displays when mouse hovers 
-      over link, mailto: special link with subject provided  -->
     <header id="top" class="title">
         <h1>The 'anchor' Element: A Foundation of Web Navigation</h1>
         <div class="border-long"></div>
@@ -111,13 +94,13 @@
                 An example that opens in the <strong>same tab</strong> would be: 
                 <br />
                 <br />
-                &emsp;&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a">A link to the Mozilla documentation on the anchor tag.</a>
+                &emsp;&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a" title="Opens the Mozilla documentation for the anchor element.">A link to the Mozilla documentation on the anchor tag.</a>
             </p>
             <p>
                 For that same example to open in a <strong>new tab</strong>, we need to add the 'target' attribute and set it to '_blank', as follows:
                 <br />
                 <br />
-                &emsp;&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a" target="_blank" rel="noopener" rel="noreferrer">This is a link to the Mozilla documentation on the anchor tag (opens in a new tab)</a>
+                &emsp;&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a" title="Opens the Mozilla documentation for the anchor element in a new tab." target="_blank" rel="noopener" rel="noreferrer">This is a link to the Mozilla documentation on the anchor tag (opens in a new tab)</a>
                 <br />
                 <br />
                 The syntax for this may look like:
@@ -128,9 +111,21 @@
                 &emsp;&emsp;&emsp;<code>[Link Text] </code>
                 <code>&lt;/a&gt;</code>
             </pre>
+            <p>
+                The 'rel' attributes are important to include for security reasons, though some modern web browsers
+                will automatically add them whenever 'target' is set to '_blank'.
+            </p>
         </section>
         <section class="text-block">
             <h2 id="special">Special Links: "mailto:</h2>
+            <p>
+                There are special links that can, instead of linking to a new page, section, or website, can instead open up
+                the user's default email application and pre-fill some of the fields. For instance, the below is a link that
+                pre-fills the "email" and "subject" fields (albeit with a fake email for privacy). 
+            </p>
+            <p>
+                <a href="mailto:email@example.com?subject=Hello%20World!" title="Sends an email to email@example.com with a subject line of 'Hello World'">Send an email to 'email@example.com' with the subject 'Hello World!'</a>
+            </p>
         </section>
     </main>
     <div class="border-short"></div>

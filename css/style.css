@@ -1,34 +1,38 @@
 html {
-    background-color: beige;
+    background-color: #0e191c;
+    color: white;
+}
+
+strong {
+    font-weight: 900;
 }
 
 pre {
-    background-color: aliceblue;
     padding: 2px;
-    color: maroon;
-}
-
-code {
-    margin-bottom: auto;
-    margin-top:auto;
+    color: #8CD1B3;
 }
 
 footer {
-    margin-left: 25%;
+    text-align: center;
 }
 
 section {
-    background-color: azure;
+    background-color: #233C45;
     padding: 0.75em;
     margin: 1em;
+    border-radius: 25px;
+}
+
+a {
+    color: #7BDEE8;
 }
 
 a:hover {
-    color: green;
+    color: #88F2E4;
 }
 
 a:visited {
-    color:darkblue;
+    color:#959eff;
 }
 
 .title{
@@ -41,7 +45,7 @@ a:visited {
 }
 
 .border-long {
-    border: 2px solid blue;
+    border: 2px solid #8CBDD1;
     width: 75%;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -50,7 +54,7 @@ a:visited {
 }
 
 .border-short {
-    border: 2px solid blue;
+    border: 2px solid #8CBDD1;
     width: 25%;
     margin-top: 1em;
     margin-bottom: 1em;
